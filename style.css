@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 242, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.header h1 {
+    font-size: 22px;
+    color: rgb(40, 40, 40);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section label {
+    margin-bottom: 5px;
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-section input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-section input:focus {
+    border-color: rgb(0, 120, 215);
+}
+
+.calc-btn {
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+}
+
+.calc-btn:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+.result-section {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: rgb(233, 247, 239);
+    border-left: 5px solid rgb(40, 167, 69);
+    border-radius: 4px;
+}
+
+.result-section h2 {
+    font-size: 18px;
+    margin-top: 0;
+    color: rgb(30, 30, 30);
+    margin-bottom: 15px;
+}
+
+.result-text {
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.output-bzag {
+    color: rgb(40, 167, 69);
+    font-size: 18px;
+}
+
+.footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(120, 120, 120);
+    border-top: 1px solid rgb(230, 230, 230);
+    padding-top: 15px;
+    line-height: 1.5;
+}

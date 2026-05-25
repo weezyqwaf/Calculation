@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Калькулятор ширини заготовки</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Розрахунок розгортки U-профілю</h1>
+  </div>
+  
+  <div class="input-section">
+    <label>Висота стінки (H), мм:</label>
+    <input type="number" class="input-h" value="180">
+    
+    <label>Ширина полиці (B), мм:</label>
+    <input type="number" class="input-b" value="70">
+    
+    <label>Товщина металу (s), мм:</label>
+    <input type="number" class="input-s" value="6">
+    
+    <label>Радіус згину (R), мм:</label>
+    <input type="number" class="input-r" value="10">
+    
+    <label>Кут згину, градуси:</label>
+    <input type="number" class="input-a" value="90">
+    
+    <button class="calc-btn">Розрахувати</button>
+  </div>
+  
+  <div class="result-section">
+    <h2>Результати:</h2>
+    <p class="result-text">Коефіцієнт зміщення (x0): <span class="output-x0">0.00</span></p>
+    <p class="result-text">Ширина заготовки: <span class="output-bzag">0.00</span> мм</p>
+  </div>
+  
+  <div class="footer">
+    Виконав студент групи МІТ-223нб Потапенко Ілля Андрійович, НТУ ХПІ 2026
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
