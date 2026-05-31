@@ -8,17 +8,18 @@ document.querySelector('.calc-btn').addEventListener('click', function() {
     let ratio = r / s;
     let x = 0.5;
     
-    if (ratio < 0.5) {
-        x = 0.3;
-    } else if (ratio >= 0.5 && ratio < 1) {
-        x = 0.35;
-    } else if (ratio >= 1 && ratio < 2) {
-        x = 0.42;
-    } else if (ratio >= 2 && ratio < 5) {
-        x = 0.45;
-    } else {
-        x = 0.5;
+if (s <= 3 && r > s) { 
+        x = 0.5 
+    } else if (s <= 3 && r < s) { 
+        x = 0.33 
+    } else if (s > 3 && ratio < 1.5) { 
+        x = 0.33 
+    } else if (s > 3 && ratio >= 1.5 && ratio <= 5) { 
+        x = 0.4 
+    } else if (s > 3 && ratio > 5) { 
+        x = 0.5 
     }
+
     
     let rho = r + x * s;
     let l1 = b - (r + s);
